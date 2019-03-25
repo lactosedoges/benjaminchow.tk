@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.jpeg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.thumbnail {
+	float: left;
+}
+
+.projectTitle{
+	float: left;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">I am Benjamin Chow</h1>
+    <p>I make stuff</p>
+    <button>Hire me</button>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">  
+      <div class="thumbnail">
+      	<img src="banner.jpeg" height=50% width=50%>
+      </div>
+
+      <div class="projectTitle">
+      	<h1>My Project</h1>
+      </div>
+
+    </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
